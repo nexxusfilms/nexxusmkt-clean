@@ -9,7 +9,7 @@ import {
   AlertTriangle, 
   BarChart, 
   Camera, 
-  Instagram, 
+  Instagram,
   Mail, 
   Phone,
   ChevronDown,
@@ -21,7 +21,14 @@ import {
   X,
   ArrowRight
 } from 'lucide-react';
-import { Button } from './components/Button';
+const Button = ({ children, ...props }: any) => (
+  <button
+    {...props}
+    className="px-5 py-2 rounded bg-black text-white hover:opacity-80"
+  >
+    {children}
+  </button>
+);
 import { motion, AnimatePresence } from 'motion/react';
 
 // -- Helper Hook for Scroll Animations --
