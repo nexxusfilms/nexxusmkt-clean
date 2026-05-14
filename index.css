@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@source "./index.html";
+@source "./index.tsx";
+@source "./App.tsx";
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
@@ -13,6 +17,7 @@
     0% { transform: translateY(-100%); }
     100% { transform: translateY(100%); }
   }
+
   @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
